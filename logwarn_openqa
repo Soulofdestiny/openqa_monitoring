@@ -47,4 +47,6 @@ $logwarn ${options} -m '\[.*:(debug|info|warn|error)\]' -p ${file} \
     '!websockets:error\] Unknown property received from worker .*' \
     `# https://progress.opensuse.org/issues/19794` \
     '!websockets:warn\] dead job .* aborted as incomplete' \
+    `# https://progress.opensuse.org/issues/21018` \
+    '!warn\] Stopping worker .* immediately' \
     '\[.*:(warn|error)\]' '!\[.*:(debug|info)\]' $@
